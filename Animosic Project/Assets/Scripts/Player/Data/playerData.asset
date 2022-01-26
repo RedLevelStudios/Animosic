@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: playerData
   m_EditorClassIdentifier: 
   movementVelocity: 7
-  dashCooldown: 0.5
-  dashTime: 0.2
-  dashVelocity: 30
-  dashEndYMultiplier: 0.2
-  distBetweenAfterImages: 0.5
+  movementDelayTime: 20
+  dashVelocity: 15
+  dashDuration: 0.5

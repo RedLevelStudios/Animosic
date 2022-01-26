@@ -7,6 +7,7 @@ public class PlayerGroundedState : PlayerState
 
     protected int xInput;
     protected int yInput;
+    protected bool shouldDash;
     protected Vector2 testInput;
     protected Vector2 movementInput;
     protected Vector2 lastDirection;
@@ -37,6 +38,13 @@ public class PlayerGroundedState : PlayerState
 
         xInput = player.InputHandler.NormInputX;
         yInput = player.InputHandler.NormInputY;
+
+        shouldDash = player.InputHandler.DashInput;
+
+        if(shouldDash)
+        {
+            stateMachine.ChangeState(player.DashState);
+        }
 
         movementInput = new Vector2(xInput, yInput);
         movementInput.Normalize();

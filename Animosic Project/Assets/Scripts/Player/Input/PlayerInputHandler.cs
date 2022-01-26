@@ -10,6 +10,7 @@ public class PlayerInputHandler : MonoBehaviour
     public Vector2 MovementInput{ get; private set; }
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
+    public bool DashInput { get; private set; }
 
     private void Update()
     {
@@ -26,6 +27,14 @@ public class PlayerInputHandler : MonoBehaviour
 
     public void OnDashInput(InputAction.CallbackContext context)
     {
+        if (context.started)
+        {
+            DashInput = true;
+        }
 
+        if (context.canceled)
+        {
+            DashInput = false;
+        }
     }
 }

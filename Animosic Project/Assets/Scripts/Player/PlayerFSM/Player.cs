@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public PlayerStateMachine StateMachine { get; private set; }
     public PlayerIdleState IdleState { get; private set; }
     public PlayerMoveState MoveState { get; private set; }
+    public PlayerDashState DashState { get; private set; }
 
     [SerializeField]
     private PlayerData playerData;
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
 
         IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
         MoveState = new PlayerMoveState(this, StateMachine, playerData, "move");
+        DashState = new PlayerDashState(this, StateMachine, playerData, "dash");
     }
 
     private void Start()
@@ -79,6 +81,13 @@ public class Player : MonoBehaviour
         Anim.SetFloat("dirX", Mathf.RoundToInt(animDirection.x));
         Anim.SetFloat("dirY", Mathf.RoundToInt(animDirection.y));
         //Debug.Log(animDirection);
+    }
+
+    public void SetDash(Vector2 velocity)
+    {
+        workspace.Set(velocity.x, velocity.y);
+        RB.velocity = workspace;
+        Debug.Log("Workspace Dash: " + workspace);
     }
 
     #endregion
