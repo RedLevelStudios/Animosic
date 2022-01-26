@@ -19,7 +19,6 @@ public class PlayerIdleState : PlayerGroundedState
 
         player.SetVelocity(Vector2.zero);
         player.SetAnimDirection(player.CurrentDirection);
-
     }
 
     public override void Exit()
@@ -31,7 +30,7 @@ public class PlayerIdleState : PlayerGroundedState
     {
         base.LogicUpdate();
 
-        if (input != Vector2.zero)
+        if (movementInput != Vector2.zero)
         {
             stateMachine.ChangeState(player.MoveState);
         }

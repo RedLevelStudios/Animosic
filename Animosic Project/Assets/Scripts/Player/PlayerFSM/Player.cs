@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     public Vector2 CurrentDirection { get; private set; }
     private Vector2 workspace;
 
+
     #endregion
 
     #region Unity Callback Functions
@@ -43,11 +44,6 @@ public class Player : MonoBehaviour
         InputHandler = GetComponent<PlayerInputHandler>();
         RB = GetComponent<Rigidbody2D>();
         StateMachine.Initialize(IdleState);
-
-        if(CurrentDirection == Vector2.zero)
-        {
-            CurrentDirection = new Vector2(0, -1);
-        }
     }
 
     private void Update()
@@ -74,12 +70,14 @@ public class Player : MonoBehaviour
     public void SetDirection(Vector2 direction)
     {
         CurrentDirection = direction;
+        CurrentDirection.Normalize();
+        //Debug.Log("Current Direction In Player: " + CurrentDirection);
     }
 
     public void SetAnimDirection(Vector2 animDirection)
     {
-        Anim.SetFloat("dirX", animDirection.x);
-        Anim.SetFloat("dirY", animDirection.y);
+        Anim.SetFloat("dirX", Mathf.RoundToInt(animDirection.x));
+        Anim.SetFloat("dirY", Mathf.RoundToInt(animDirection.y));
         //Debug.Log(animDirection);
     }
 

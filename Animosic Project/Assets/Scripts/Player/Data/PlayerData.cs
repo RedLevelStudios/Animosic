@@ -8,6 +8,7 @@ public class PlayerData : ScriptableObject
 {
     [Header("Move State")]
     public float movementVelocity = 7f;
+    public float movementDelayTime = 20f;
 }
 
 

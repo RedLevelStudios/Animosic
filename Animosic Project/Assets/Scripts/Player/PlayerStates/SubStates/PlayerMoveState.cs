@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMoveState : PlayerGroundedState
 {
+
+    private int movementDelay;
     public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
@@ -16,30 +18,32 @@ public class PlayerMoveState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
+        movementDelay = 0;
     }
 
     public override void Exit()
     {
         base.Exit();
-
-        //Debug.Log("Move Exit Input: " + input);
     }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
 
-        player.SetVelocity(playerData.movementVelocity * input);
-        player.SetAnimDirection(input);
+        movementDelay++;
 
-        if (input != Vector2.zero)
+        if (movementInput != Vector2.zero && movementDelay > playerData.movementDelayTime)
         {
-            player.SetDirection(input);
+            player.SetVelocity(playerData.movementVelocity * movementInput);
+            player.SetAnimDirection(movementInput);
+            player.SetDirection(movementInput);
+            movementDelay = 0;
         }
 
-        else if (input == Vector2.zero)
+        if (movementInput == Vector2.zero)
         {
             stateMachine.ChangeState(player.IdleState);
+            movementDelay = 0;
         }
 
     }
