@@ -11,8 +11,6 @@ public class PlayerInputHandler : MonoBehaviour
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
 
-    public Vector2 FirstInput { get; private set; }
-
     private void Update()
     {
 
