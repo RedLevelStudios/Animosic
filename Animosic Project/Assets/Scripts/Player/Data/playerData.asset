@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementVelocity: 7
   movementDelayTime: 20
-  dashVelocity: 15
-  dashDuration: 0.5
+  dashVelocity: 100
+  dashDuration: 0.02
+  dashCooldown: 1
+  dashAmount: 2

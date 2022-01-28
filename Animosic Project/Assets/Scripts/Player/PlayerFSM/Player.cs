@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
     {
         workspace.Set(velocity.x, velocity.y);
         RB.velocity = workspace;
-        Debug.Log("Workspace Dash: " + workspace);
+        //Debug.Log("Workspace Dash: " + workspace);
     }
 
     #endregion

@@ -12,9 +12,11 @@ public class PlayerInputHandler : MonoBehaviour
     public int NormInputY { get; private set; }
     public bool DashInput { get; private set; }
 
+    private float dashInputStartTime;
+
     private void Update()
     {
-
+        CheckDashInputHoldTime();
     }
 
     public void OnMoveInput(InputAction.CallbackContext context)
@@ -30,9 +32,18 @@ public class PlayerInputHandler : MonoBehaviour
         if (context.started)
         {
             DashInput = true;
+            dashInputStartTime = Time.time;
         }
 
         if (context.canceled)
+        {
+            DashInput = false;
+        }
+    }
+
+    private void CheckDashInputHoldTime()
+    {
+        if(Time.time >= dashInputStartTime + .02f)
         {
             DashInput = false;
         }

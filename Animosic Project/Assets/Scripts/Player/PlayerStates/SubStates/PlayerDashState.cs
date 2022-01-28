@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class PlayerDashState : PlayerGroundedState
 {
+    private float dashStopTime;
+    private int dashAmountLeft;
+    private float dashAmountTime;
+    public float dashResetTime;
 
-    private float dashStartTime;
 
     public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
+        dashAmountLeft = playerData.dashAmount;
     }
 
     public override void DoChecks()
@@ -19,30 +23,29 @@ public class PlayerDashState : PlayerGroundedState
     public override void Enter()
     {
         base.Enter();
-
-        dashStartTime = Time.time + playerData.dashDuration;
-        Debug.Log("Enter Dash State");
+        dashStopTime = Time.time + playerData.dashDuration;
+        dashAmountTime = Time.time;
     }
 
     public override void Exit()
     {
         base.Exit();
-        dashStartTime = 0;
-        Debug.Log("Exit Dash State");
     }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
 
-        //Debug.Log("Time: " + Time.time);
-        //Debug.Log("Dash Start Time: " + dashStartTime);
-        Debug.Log("Dash Velocity Test: " + (player.CurrentDirection * playerData.dashVelocity));
-        player.SetDash(player.CurrentDirection * playerData.dashVelocity);
-
-        if(Mathf.RoundToInt(Time.time) == Mathf.RoundToInt(dashStartTime))
+        if (Time.time < dashStopTime && CanDash())
         {
-
+            player.SetDash(player.CurrentDirection * playerData.dashVelocity);
+            player.SetAnimDirection(player.CurrentDirection);
+        }
+        else
+        {
+            DecreaseDashAmount();
+            player.SetDash(Vector2.zero);
+            dashResetTime = Time.time + playerData.dashCooldown;
             stateMachine.ChangeState(player.IdleState);
         }
     }
@@ -51,4 +54,20 @@ public class PlayerDashState : PlayerGroundedState
     {
         base.PhysicsUpdate();
     }
+
+    public bool CanDash()
+    {
+        if (dashAmountLeft > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    } 
+
+    public void ResetDashAmount() => dashAmountLeft = playerData.dashAmount;
+    public void DecreaseDashAmount() => dashAmountLeft--;
+
 }
