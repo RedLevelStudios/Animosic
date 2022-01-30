@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
     public PlayerInputHandler InputHandler { get; private set; }
     public Rigidbody2D RB { get; private set; }
 
+    public RuntimeAnimatorController anim1;
+    public RuntimeAnimatorController anim2;
+
     #endregion
 
     #region Other Variables
@@ -46,6 +49,8 @@ public class Player : MonoBehaviour
         InputHandler = GetComponent<PlayerInputHandler>();
         RB = GetComponent<Rigidbody2D>();
         StateMachine.Initialize(IdleState);
+
+        CurrentDirection = new Vector2(0, -1);
     }
 
     private void Update()
@@ -88,6 +93,12 @@ public class Player : MonoBehaviour
         workspace.Set(velocity.x, velocity.y);
         RB.velocity = workspace;
         //Debug.Log("Workspace Dash: " + workspace);
+    }
+
+    public void SetAnimator(RuntimeAnimatorController test)
+    {
+        this.GetComponent<Animator>().runtimeAnimatorController = test as RuntimeAnimatorController;
+        //Debug.Log("Test");
     }
 
     #endregion

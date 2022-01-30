@@ -12,6 +12,8 @@ public class PlayerInputHandler : MonoBehaviour
     public int NormInputY { get; private set; }
     public bool DashInput { get; private set; }
 
+    public bool SwordInput { get; private set; }
+
     private float dashInputStartTime;
 
     private void Update()
@@ -46,6 +48,19 @@ public class PlayerInputHandler : MonoBehaviour
         if(Time.time >= dashInputStartTime + .02f)
         {
             DashInput = false;
+        }
+    }
+
+    public void OnSwordInput(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            SwordInput = true;
+        }
+
+        if (context.canceled)
+        {
+            SwordInput = false;
         }
     }
 }

@@ -8,6 +8,7 @@ public class PlayerGroundedState : PlayerState
     protected int yInput;
     protected bool dashInput;
     protected Vector2 movementInput;
+    protected bool swordInput;
 
     public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -35,6 +36,7 @@ public class PlayerGroundedState : PlayerState
         xInput = player.InputHandler.NormInputX;
         yInput = player.InputHandler.NormInputY;
         dashInput = player.InputHandler.DashInput;
+        swordInput = player.InputHandler.SwordInput;
 
         if (Time.time > player.DashState.dashResetTime)
         {
@@ -49,6 +51,16 @@ public class PlayerGroundedState : PlayerState
         {
             movementInput = new Vector2(xInput, yInput);
             movementInput.Normalize();
+        }
+
+        if (swordInput)
+        {
+            player.SetAnimator(player.anim2);
+        }
+        else
+        {
+            player.SetAnimator(player.anim1);
+            player.SetAnimDirection(player.CurrentDirection);
         }
     }
 

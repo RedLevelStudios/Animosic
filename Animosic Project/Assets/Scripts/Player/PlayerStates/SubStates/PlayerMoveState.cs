@@ -45,7 +45,6 @@ public class PlayerMoveState : PlayerGroundedState
             stateMachine.ChangeState(player.IdleState);
             movementDelay = 0;
         }
-
     }
 
     public override void PhysicsUpdate()
