@@ -36,6 +36,15 @@ public class PlayerGroundedState : PlayerState
         yInput = player.InputHandler.NormInputY;
         dashInput = player.InputHandler.DashInput;
 
+        if(player.InputHandler.AttackInputs[(int)CombatInputs.primary])
+        {
+            stateMachine.ChangeState(player.PrimaryAttackState);
+        }
+        else if(player.InputHandler.AttackInputs[(int)CombatInputs.secondary])
+        {
+            stateMachine.ChangeState(player.SecondaryAttackState);
+        }
+
         if (Time.time > player.DashState.dashResetTime)
         {
             player.DashState.ResetDashAmount();
@@ -50,6 +59,7 @@ public class PlayerGroundedState : PlayerState
             movementInput = new Vector2(xInput, yInput);
             movementInput.Normalize();
         }
+
     }
 
     public override void PhysicsUpdate()

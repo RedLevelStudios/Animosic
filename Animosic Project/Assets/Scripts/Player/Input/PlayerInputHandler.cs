@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,8 +13,17 @@ public class PlayerInputHandler : MonoBehaviour
     public int NormInputY { get; private set; }
     public bool DashInput { get; private set; }
 
+    public bool[] AttackInputs { get; private set; }
+
+
     private float dashInputStartTime;
 
+
+    private void Start()
+    {
+        int count = Enum.GetValues(typeof(CombatInputs)).Length;
+        AttackInputs = new bool[count];
+    }
     private void Update()
     {
         CheckDashInputHoldTime();
@@ -25,6 +35,32 @@ public class PlayerInputHandler : MonoBehaviour
 
         NormInputX = Mathf.RoundToInt(MovementInput.x);
         NormInputY = Mathf.RoundToInt(MovementInput.y);
+    }
+
+    public void OnPrimaryAttackInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            AttackInputs[(int)CombatInputs.primary] = true;
+        }
+
+        if (context.canceled)
+        {
+            AttackInputs[(int)CombatInputs.primary] = false;
+        }
+    }
+
+    public void OnSecondaryAttackInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            AttackInputs[(int)CombatInputs.secondary] = true;
+        }
+
+        if (context.canceled)
+        {
+            AttackInputs[(int)CombatInputs.secondary] = false;
+        }
     }
 
     public void OnDashInput(InputAction.CallbackContext context)
@@ -48,4 +84,11 @@ public class PlayerInputHandler : MonoBehaviour
             DashInput = false;
         }
     }
+
+}
+
+public enum CombatInputs
+{
+    primary,
+    secondary
 }
