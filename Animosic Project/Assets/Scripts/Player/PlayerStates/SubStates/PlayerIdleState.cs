@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerIdleState : PlayerGroundedState
 {
+
+    private float sleepTimer;
+    private bool canSleep;
     public PlayerIdleState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
@@ -19,6 +22,9 @@ public class PlayerIdleState : PlayerGroundedState
 
         player.SetVelocity(Vector2.zero);
         player.SetAnimDirection(player.CurrentDirection);
+
+        sleepTimer = Time.time + playerData.sleepTime;
+        canSleep = true;
     }
 
     public override void Exit()
@@ -32,7 +38,14 @@ public class PlayerIdleState : PlayerGroundedState
 
         if (movementInput != Vector2.zero)
         {
+            player.Anim.SetBool("sleep", false);
             stateMachine.ChangeState(player.MoveState);
+        }
+
+        if (sleepTimer <= Time.time && canSleep)
+        {
+            player.Anim.SetBool("sleep", true);
+            canSleep = false;
         }
     }
 

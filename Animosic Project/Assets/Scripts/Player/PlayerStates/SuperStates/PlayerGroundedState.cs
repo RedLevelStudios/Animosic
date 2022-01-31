@@ -38,6 +38,7 @@ public class PlayerGroundedState : PlayerState
 
         if(player.InputHandler.AttackInputs[(int)CombatInputs.primary])
         {
+            player.SetVelocity(Vector2.zero);
             stateMachine.ChangeState(player.PrimaryAttackState);
         }
         else if(player.InputHandler.AttackInputs[(int)CombatInputs.secondary])
