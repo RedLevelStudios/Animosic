@@ -804,7 +804,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5086328861427622187, guid: c6bf4c648e69834499de45834ce4b474, type: 3}
+  m_Sprite: {fileID: -1249730126197653192, guid: 62520974ed32da04ea5724e58632565e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1061,12 +1061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7a473d3b1533345926f981bfc6adf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 0
-  currentDirection: {x: 0, y: -1, z: 0}
-  playerSpeed: 5
-  dashSpeed: 35
-  dashCount: 0
-  swordDashSpeed: 6
 --- !u!50 &1983849737
 Rigidbody2D:
   serializedVersion: 4
