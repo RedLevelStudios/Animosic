@@ -14,6 +14,7 @@ public class PlayerAttackState : PlayerAbilityState
     {
         base.Enter();
 
+        CurrentDirection = player.CurrentDirection;
         weapon.EnterWeapon();
     }
 

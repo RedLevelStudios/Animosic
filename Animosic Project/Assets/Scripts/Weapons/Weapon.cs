@@ -20,6 +20,8 @@ public class Weapon : MonoBehaviour
     {
         gameObject.SetActive(true);
 
+        SetAnimationDirection(state.CurrentDirection);
+
         baseAnimator.SetBool("attack", true);
         weaponAnimator.SetBool("attack", true);
     }
@@ -45,5 +47,14 @@ public class Weapon : MonoBehaviour
     public void InitializeWeapon(PlayerAttackState state)
     {
         this.state = state;
+    }
+
+    private void SetAnimationDirection(Vector2 direction)
+    {
+        direction.Normalize();
+        baseAnimator.SetFloat("animX", direction.x);
+        baseAnimator.SetFloat("animY", direction.y);
+        weaponAnimator.SetFloat("animX", direction.x);
+        weaponAnimator.SetFloat("animY", direction.y);
     }
 }

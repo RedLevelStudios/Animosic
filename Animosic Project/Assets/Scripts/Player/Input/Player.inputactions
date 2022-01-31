@@ -133,6 +133,17 @@
                 },
                 {
                     "name": "",
+                    "id": "c1185221-6506-4db4-b16c-44449d208fce",
+                    "path": "<Pointer>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Primary",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5f0221b6-c3f3-4129-a54e-b53d017e921a",
                     "path": "<Gamepad>/buttonWest",
                     "interactions": "",

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAbilityState : PlayerState
 {
     protected bool isAbilityDone;
+    public Vector2 CurrentDirection;
 
     public PlayerAbilityState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -30,6 +31,8 @@ public class PlayerAbilityState : PlayerState
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
+        CurrentDirection = player.CurrentDirection;
 
         if (isAbilityDone)
         {
