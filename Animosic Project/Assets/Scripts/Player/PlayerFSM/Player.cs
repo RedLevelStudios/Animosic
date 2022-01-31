@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
         Inventory = GetComponent<PlayerInventory>();
 
-        CurrentDirection = new Vector2(0, -1);
+        ResetCurrentDirection();
 
         PrimaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
         //SecondaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
@@ -111,9 +111,15 @@ public class Player : MonoBehaviour
     #endregion
 
     #region Other Functions
+
+    public void ResetCurrentDirection()
+    {
+        CurrentDirection = new Vector2(0, -1);
+    }
     private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
     private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
+
 
     #endregion
 

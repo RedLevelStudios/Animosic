@@ -30,6 +30,8 @@ public class PlayerIdleState : PlayerGroundedState
     public override void Exit()
     {
         base.Exit();
+
+        player.Anim.SetBool("sleep", false);
     }
 
     public override void LogicUpdate()
@@ -45,6 +47,7 @@ public class PlayerIdleState : PlayerGroundedState
         if (sleepTimer <= Time.time && canSleep)
         {
             player.Anim.SetBool("sleep", true);
+            player.ResetCurrentDirection();
             canSleep = false;
         }
     }
