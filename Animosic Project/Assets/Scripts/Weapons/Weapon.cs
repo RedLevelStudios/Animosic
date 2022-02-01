@@ -21,7 +21,7 @@ public class Weapon : MonoBehaviour
     {
         gameObject.SetActive(true);
 
-        if (attackCounter >= 3)
+        if (attackCounter >= 2)
         {
             attackCounter = 0;
         }
@@ -31,15 +31,14 @@ public class Weapon : MonoBehaviour
         baseAnimator.SetBool("attack", true);
         weaponAnimator.SetBool("attack", true);
 
-        //baseAnimator.SetInteger("attackCounter", attackCounter);
-        //weaponAnimator.SetInteger("attackCounter", attackCounter);
+        baseAnimator.SetInteger("attackCounter", attackCounter);
+        weaponAnimator.SetInteger("attackCounter", attackCounter);
 
         Debug.Log("Attack Counter: " + attackCounter);
     }
 
     public virtual void ExitWeapon()
     {
-        Debug.Log("Trying to exit weapon.");
         baseAnimator.SetBool("attack", false);
         weaponAnimator.SetBool("attack", false);
 

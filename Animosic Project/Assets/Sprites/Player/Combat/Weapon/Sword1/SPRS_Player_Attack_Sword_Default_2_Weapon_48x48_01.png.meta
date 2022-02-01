@@ -1,0 +1,1032 @@
+fileFormatVersion: 2
+guid: 7a26e8f2232afc84795da6f449ea7586
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4758920556043847247
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_0
+  - first:
+      213: -5997750270425175416
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_1
+  - first:
+      213: -1829132332343475807
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_2
+  - first:
+      213: 4714218237330523024
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_3
+  - first:
+      213: -8257256493901743917
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_4
+  - first:
+      213: -3207739015290315014
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_5
+  - first:
+      213: -3201533806409127829
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_6
+  - first:
+      213: 8169976797538145265
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_7
+  - first:
+      213: 894183860778388199
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_8
+  - first:
+      213: 3181042547967258068
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_9
+  - first:
+      213: -5647534656336686097
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_10
+  - first:
+      213: 2635834428573109467
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_11
+  - first:
+      213: -8519783449368297602
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_12
+  - first:
+      213: -1708368815956245440
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_13
+  - first:
+      213: 5004353351098428629
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_14
+  - first:
+      213: -8892370148682954704
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_15
+  - first:
+      213: -7192525288995245595
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_16
+  - first:
+      213: 1164162667070338647
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_17
+  - first:
+      213: 1285010393042814371
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_18
+  - first:
+      213: 2464241459943664474
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_19
+  - first:
+      213: 5972367719767667215
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_20
+  - first:
+      213: -8679448282833624212
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_21
+  - first:
+      213: -9018807697555736738
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_22
+  - first:
+      213: -7712873123808955336
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_23
+  - first:
+      213: 2789166885531495481
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_24
+  - first:
+      213: 5438637561903256328
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_25
+  - first:
+      213: -110199340007506116
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_26
+  - first:
+      213: 6107212027418711547
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_27
+  - first:
+      213: 7230598508138999323
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_28
+  - first:
+      213: -8805197422942149875
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_29
+  - first:
+      213: 4346861932673356742
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_30
+  - first:
+      213: -5381468280770839485
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_31
+  - first:
+      213: 4881370702697573122
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_32
+  - first:
+      213: 3126355161601451277
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_33
+  - first:
+      213: -3978674589675068318
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_34
+  - first:
+      213: 1749967930768412984
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_35
+  - first:
+      213: 7142646916295634452
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_36
+  - first:
+      213: -8881351233868623951
+    second: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_37
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9b3b6d7fae4fdb0800000000000000
+      internalID: -4758920556043847247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aedcf08e5b3cca0800000000000000
+      internalID: -5997750270425175416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a14c7bb5dd9d96e0800000000000000
+      internalID: -1829132332343475807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09301c582844c6140800000000000000
+      internalID: 4714218237330523024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8f2b5b7f4586d80800000000000000
+      internalID: -8257256493901743917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe95756c52db73d0800000000000000
+      internalID: -3207739015290315014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68649c27fdd193d0800000000000000
+      internalID: -3201533806409127829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3d1786c96916170800000000000000
+      internalID: 8169976797538145265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea4599db77c86c00800000000000000
+      internalID: 894183860778388199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddedfee755552c20800000000000000
+      internalID: 3181042547967258068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe31858e62def91b0800000000000000
+      internalID: -5647534656336686097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc48d1927d549420800000000000000
+      internalID: 2635834428573109467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f7621b716a3c980800000000000000
+      internalID: -8519783449368297602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044c29bfc97aa48e0800000000000000
+      internalID: -1708368815956245440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dce1cecbd8037540800000000000000
+      internalID: 5004353351098428629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038077ca674f79480800000000000000
+      internalID: -8892370148682954704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_16
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1bc677b540f2c90800000000000000
+      internalID: -7192525288995245595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_17
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756bf7717cfe72010800000000000000
+      internalID: 1164162667070338647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5800ae42645d110800000000000000
+      internalID: 1285010393042814371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b6bbc3d8eb23220800000000000000
+      internalID: 2464241459943664474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02f2c45ccc12e250800000000000000
+      internalID: 5972367719767667215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63e35fb5c76c8780800000000000000
+      internalID: -8679448282833624212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57b1a9ce22c6d280800000000000000
+      internalID: -9018807697555736738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_23
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834b5b922ce56f490800000000000000
+      internalID: -7712873123808955336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_24
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c2367318c15b620800000000000000
+      internalID: 2789166885531495481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80317532c0ce97b40800000000000000
+      internalID: 5438637561903256328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fbe5cb84e787ef0800000000000000
+      internalID: -110199340007506116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_27
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf519464bfc21c450800000000000000
+      internalID: 6107212027418711547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e2817a80f385460800000000000000
+      internalID: 7230598508138999323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_29
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0329548897adc580800000000000000
+      internalID: -8805197422942149875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3d9a8a5e7235c30800000000000000
+      internalID: 4346861932673356742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c3f926c1f2155b0800000000000000
+      internalID: -5381468280770839485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ba94f9acc1eb340800000000000000
+      internalID: 4881370702697573122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05a6f0947b036b20800000000000000
+      internalID: 3126355161601451277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2646b856a88e8c8c0800000000000000
+      internalID: -3978674589675068318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_35
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831d6c1bf82294810800000000000000
+      internalID: 1749967930768412984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e27d9e687cf1360800000000000000
+      internalID: 7142646916295634452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRS_Player_Attack_Sword_Default_2_Weapon_48x48_01_37
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf88c3bb1a1fb480800000000000000
+      internalID: -8881351233868623951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

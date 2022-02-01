@@ -12,16 +12,15 @@ public class PlayerInputHandler : MonoBehaviour
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
     public bool DashInput { get; private set; }
-
     public bool[] AttackInputs { get; private set; }
 
-
     private float dashInputStartTime;
-
+    private float dashDuration;
 
     private void Start()
     {
         int count = Enum.GetValues(typeof(CombatInputs)).Length;
+        dashDuration = .02f;
         AttackInputs = new bool[count];
     }
     private void Update()
@@ -79,12 +78,11 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void CheckDashInputHoldTime()
     {
-        if(Time.time >= dashInputStartTime + .02f)
+        if(Time.time >= dashInputStartTime + dashDuration)
         {
             DashInput = false;
         }
     }
-
 }
 
 public enum CombatInputs
