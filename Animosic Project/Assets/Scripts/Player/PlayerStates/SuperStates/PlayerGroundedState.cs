@@ -6,8 +6,9 @@ public class PlayerGroundedState : PlayerState
 {
     protected int xInput;
     protected int yInput;
-    protected bool dashInput;
     protected Vector2 movementInput;
+    protected bool dashInput;
+
 
     public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -21,6 +22,8 @@ public class PlayerGroundedState : PlayerState
     public override void Enter()
     {
         base.Enter();
+
+        //Debug.Log("Enter Grounded State");
     }
 
     public override void Exit()
@@ -34,6 +37,7 @@ public class PlayerGroundedState : PlayerState
 
         xInput = player.InputHandler.NormInputX;
         yInput = player.InputHandler.NormInputY;
+        movementInput = player.InputHandler.MovementInput;
         dashInput = player.InputHandler.DashInput;
 
         if(player.InputHandler.AttackInputs[(int)CombatInputs.primary])

@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDashState : PlayerGroundedState
+public class PlayerDashState : PlayerAbilityState
 {
     private float dashStopTime;
     private int dashAmountLeft;
     private float dashAmountTime;
     public float dashResetTime;
-
 
     public PlayerDashState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -38,13 +37,11 @@ public class PlayerDashState : PlayerGroundedState
 
         if (Time.time < dashStopTime && CanDash())
         {
-            player.SetDash(player.CurrentDirection * playerData.dashVelocity);
-            player.SetAnimDirection(player.CurrentDirection);
+            player.SetVelocity(player.CurrentDirection * playerData.dashVelocity);
         }
         else
         {
-            DecreaseDashAmount();
-            player.SetDash(Vector2.zero);
+            player.SetVelocity(Vector2.zero);
             dashResetTime = Time.time + playerData.dashCooldown;
             stateMachine.ChangeState(player.IdleState);
         }
@@ -69,5 +66,13 @@ public class PlayerDashState : PlayerGroundedState
 
     public void ResetDashAmount() => dashAmountLeft = playerData.dashAmount;
     public void DecreaseDashAmount() => dashAmountLeft--;
+
+    public override void AnimationFinishTrigger()
+    {
+        base.AnimationFinishTrigger();
+
+        DecreaseDashAmount();
+        isAbilityDone = true;
+    }
 
 }

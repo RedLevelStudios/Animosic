@@ -21,6 +21,8 @@ public class PlayerAbilityState : PlayerState
         base.Enter();
 
         isAbilityDone = false;
+
+        //Debug.Log("Enter Ability State");
     }
 
     public override void Exit()
@@ -36,6 +38,7 @@ public class PlayerAbilityState : PlayerState
 
         if (isAbilityDone)
         {
+            Debug.Log("Ability Done");
             stateMachine.ChangeState(player.IdleState);
         }
     }

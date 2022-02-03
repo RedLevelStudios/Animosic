@@ -21,7 +21,7 @@ public class PlayerIdleState : PlayerGroundedState
         base.Enter();
 
         player.SetVelocity(Vector2.zero);
-        player.SetAnimDirection(player.CurrentDirection);
+        player.SetDirection(player.CurrentDirection);
 
         sleepTimer = Time.time + playerData.sleepTime;
         canSleep = true;

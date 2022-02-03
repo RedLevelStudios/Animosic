@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    [SerializeField] private SO_WeaponData weaponData;
+
     protected Animator baseAnimator;
     protected Animator weaponAnimator;
     protected PlayerAttackState state;
@@ -21,7 +23,7 @@ public class Weapon : MonoBehaviour
     {
         gameObject.SetActive(true);
 
-        if (attackCounter >= 2)
+        if (attackCounter >= weaponData.movementSpeed.Length - 1)
         {
             attackCounter = 0;
         }
@@ -54,6 +56,15 @@ public class Weapon : MonoBehaviour
         state.AnimationFinishTrigger();
     }
 
+    public virtual void AnimationStartMovementTrigger()
+    {
+        state.SetPlayerVelocity(weaponData.movementSpeed[attackCounter]);
+    }
+
+    public virtual void AnimationStopMovementTrigger()
+    {
+        state.SetPlayerVelocity(0f);
+    }
     #endregion
 
     public void InitializeWeapon(PlayerAttackState state)

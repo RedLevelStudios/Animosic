@@ -6,6 +6,9 @@ public class PlayerAttackState : PlayerAbilityState
 {
     private Weapon weapon;
 
+    private float velocityToSet;
+    private bool setVelocity;
+
     public PlayerAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
@@ -14,8 +17,20 @@ public class PlayerAttackState : PlayerAbilityState
     {
         base.Enter();
 
+        setVelocity = false;
+
         CurrentDirection = player.CurrentDirection;
         weapon.EnterWeapon();
+    }
+
+    public override void LogicUpdate()
+    {
+        base.LogicUpdate();
+
+        if(setVelocity == true)
+        {
+            player.SetVelocity(velocityToSet * player.CurrentDirection);
+        }
     }
 
     public override void Exit()
@@ -29,6 +44,14 @@ public class PlayerAttackState : PlayerAbilityState
     {
         this.weapon = weapon;
         weapon.InitializeWeapon(this);
+    }
+
+    public void SetPlayerVelocity(float velocity)
+    {
+        player.SetVelocity(velocity * player.CurrentDirection);
+
+        velocityToSet = velocity;
+        setVelocity = true;
     }
 
     #region Animation Triggers

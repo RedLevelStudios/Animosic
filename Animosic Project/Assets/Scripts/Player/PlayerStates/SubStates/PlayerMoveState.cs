@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMoveState : PlayerGroundedState
 {
-
     private int movementDelay;
     public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -34,9 +33,9 @@ public class PlayerMoveState : PlayerGroundedState
 
         if (movementInput != Vector2.zero && movementDelay > playerData.movementDelayTime)
         {
-            player.SetVelocity(playerData.movementVelocity * movementInput);
-            player.SetAnimDirection(movementInput);
+            player.SetVelocity(movementInput * playerData.movementVelocity);
             player.SetDirection(movementInput);
+            //player.SetAnimDirection(movementInput);
             movementDelay = 0;
         }
 

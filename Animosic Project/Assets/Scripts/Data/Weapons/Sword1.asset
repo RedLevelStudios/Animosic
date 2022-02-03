@@ -9,14 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a479d06ebecb184478aac6cc2411a4da, type: 3}
-  m_Name: playerData
+  m_Script: {fileID: 11500000, guid: fc75bca29b47f4845b0bc57466860cdb, type: 3}
+  m_Name: Sword1
   m_EditorClassIdentifier: 
-  movementVelocity: 7
-  movementDelayTime: 20
-  sleepTime: 10
-  attackVelocity: 3
-  dashVelocity: 85
-  dashDuration: 0.03
-  dashCooldown: 1
-  dashAmount: 2
+  movementSpeed:
+  - 3
+  - 3
+  - 0

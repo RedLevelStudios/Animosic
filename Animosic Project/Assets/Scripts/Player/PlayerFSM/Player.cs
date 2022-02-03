@@ -66,7 +66,6 @@ public class Player : MonoBehaviour
     private void Update()
     {
         StateMachine.CurrentState.LogicUpdate();
-        //Debug.Log(StateMachine.CurrentState);
     }
 
     private void FixedUpdate()
@@ -81,28 +80,14 @@ public class Player : MonoBehaviour
     {
         workspace.Set(velocity.x, velocity.y);
         RB.velocity = workspace;
-        workspace.Normalize();
     }
 
     public void SetDirection(Vector2 direction)
     {
         CurrentDirection = direction;
         CurrentDirection.Normalize();
-        //Debug.Log("Current Direction In Player: " + CurrentDirection);
-    }
-
-    public void SetAnimDirection(Vector2 animDirection)
-    {
-        Anim.SetFloat("dirX", Mathf.RoundToInt(animDirection.x));
-        Anim.SetFloat("dirY", Mathf.RoundToInt(animDirection.y));
-        //Debug.Log(animDirection);
-    }
-
-    public void SetDash(Vector2 velocity)
-    {
-        workspace.Set(velocity.x, velocity.y);
-        RB.velocity = workspace;
-        //Debug.Log("Workspace Dash: " + workspace);
+        Anim.SetFloat("dirX", Mathf.RoundToInt(direction.x));
+        Anim.SetFloat("dirY", Mathf.RoundToInt(direction.y));
     }
 
     #endregion
