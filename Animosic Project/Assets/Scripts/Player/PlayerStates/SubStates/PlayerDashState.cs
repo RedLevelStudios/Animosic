@@ -29,6 +29,7 @@ public class PlayerDashState : PlayerAbilityState
     public override void Exit()
     {
         base.Exit();
+        DecreaseDashAmount();
     }
 
     public override void LogicUpdate()
@@ -37,11 +38,11 @@ public class PlayerDashState : PlayerAbilityState
 
         if (Time.time < dashStopTime && CanDash())
         {
-            player.SetVelocity(player.CurrentDirection * playerData.dashVelocity);
+            core.Movement.SetVelocity(core.Movement.CurrentDirection * playerData.dashVelocity);
         }
         else
         {
-            player.SetVelocity(Vector2.zero);
+            core.Movement.SetVelocity(Vector2.zero);
             dashResetTime = Time.time + playerData.dashCooldown;
             stateMachine.ChangeState(player.IdleState);
         }
@@ -71,7 +72,6 @@ public class PlayerDashState : PlayerAbilityState
     {
         base.AnimationFinishTrigger();
 
-        DecreaseDashAmount();
         isAbilityDone = true;
     }
 

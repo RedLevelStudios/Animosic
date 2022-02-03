@@ -33,9 +33,10 @@ public class PlayerMoveState : PlayerGroundedState
 
         if (movementInput != Vector2.zero && movementDelay > playerData.movementDelayTime)
         {
-            player.SetVelocity(movementInput * playerData.movementVelocity);
-            player.SetDirection(movementInput);
-            //player.SetAnimDirection(movementInput);
+            core.Movement.SetVelocity(movementInput * playerData.movementVelocity);
+            core.Movement.SetDirection(movementInput);
+            SetAnimationDirection(movementInput);
+
             movementDelay = 0;
         }
 
@@ -49,5 +50,11 @@ public class PlayerMoveState : PlayerGroundedState
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
+    }
+
+    public void SetAnimationDirection(Vector2 direction)
+    {
+        core.Movement.Anim.SetFloat("dirX", Mathf.RoundToInt(direction.x));
+        core.Movement.Anim.SetFloat("dirY", Mathf.RoundToInt(direction.y));
     }
 }

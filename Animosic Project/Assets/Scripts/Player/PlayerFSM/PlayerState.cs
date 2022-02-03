@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class PlayerState
 {
+    protected Core core;
     protected Player player;
     protected PlayerStateMachine stateMachine;
     protected PlayerData playerData;
-
     protected bool isAnimationFinished;
     protected bool isExitingState;
-
     protected float startTime;
 
     private string animBoolName;
@@ -21,12 +20,13 @@ public class PlayerState
         this.stateMachine = stateMachine;
         this.playerData = playerData;
         this.animBoolName = animBoolName;
+        core = player.Core;
     }
 
     public virtual void Enter()
     {
         DoChecks();
-        player.Anim.SetBool(animBoolName, true);
+        core.Movement.Anim.SetBool(animBoolName, true);
         startTime = Time.time;
         //Debug.Log(animBoolName);
         isAnimationFinished = false;
@@ -35,7 +35,7 @@ public class PlayerState
 
     public virtual void Exit()
     {
-        player.Anim.SetBool(animBoolName, false);
+        core.Movement.Anim.SetBool(animBoolName, false);
         isExitingState = true;
     }
 

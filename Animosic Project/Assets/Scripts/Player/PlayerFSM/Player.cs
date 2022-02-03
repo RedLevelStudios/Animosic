@@ -20,17 +20,19 @@ public class Player : MonoBehaviour
 
     #region Components
 
-    public Animator Anim { get; private set; }
+    public Core Core { get; private set; }
+
+    //public Animator Anim { get; private set; }
     public PlayerInputHandler InputHandler { get; private set; }
-    public Rigidbody2D RB { get; private set; }
+    //public Rigidbody2D RB { get; private set; }
 
     public PlayerInventory Inventory { get; private set; }
 
     #endregion
 
     #region Other Variables
-    public Vector2 CurrentDirection { get; private set; }
-    private Vector2 workspace;
+    //public Vector2 CurrentDirection { get; private set; }
+    //private Vector2 workspace;
 
 
     #endregion
@@ -38,6 +40,8 @@ public class Player : MonoBehaviour
     #region Unity Callback Functions
     private void Awake()
     {
+        Core = GetComponentInChildren<Core>();
+
         StateMachine = new PlayerStateMachine();
 
         IdleState = new PlayerIdleState(this, StateMachine, playerData, "idle");
@@ -49,45 +53,27 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        Anim = GetComponent<Animator>();
+        //Anim = GetComponent<Animator>();
         InputHandler = GetComponent<PlayerInputHandler>();
-        RB = GetComponent<Rigidbody2D>();
+        //RB = GetComponent<Rigidbody2D>();
         Inventory = GetComponent<PlayerInventory>();
-
-        ResetCurrentDirection();
 
         PrimaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
         //SecondaryAttackState.SetWeapon(Inventory.weapons[(int)CombatInputs.primary]);
 
+        ResetCurrentDirection();
         StateMachine.Initialize(IdleState);
-
     }
 
     private void Update()
     {
+        Core.LogicUpdate();
         StateMachine.CurrentState.LogicUpdate();
     }
 
     private void FixedUpdate()
     {
         StateMachine.CurrentState.PhysicsUpdate();
-    }
-
-    #endregion
-
-    #region Set Functions
-    public void SetVelocity(Vector2 velocity)
-    {
-        workspace.Set(velocity.x, velocity.y);
-        RB.velocity = workspace;
-    }
-
-    public void SetDirection(Vector2 direction)
-    {
-        CurrentDirection = direction;
-        CurrentDirection.Normalize();
-        Anim.SetFloat("dirX", Mathf.RoundToInt(direction.x));
-        Anim.SetFloat("dirY", Mathf.RoundToInt(direction.y));
     }
 
     #endregion
@@ -99,7 +85,7 @@ public class Player : MonoBehaviour
 
     public void ResetCurrentDirection()
     {
-        CurrentDirection = new Vector2(0, -1);
+        Core.Movement.ResetCurrentDirection(playerData.StartingDirection);
     }
     private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 

@@ -20,8 +20,8 @@ public class PlayerIdleState : PlayerGroundedState
     {
         base.Enter();
 
-        player.SetVelocity(Vector2.zero);
-        player.SetDirection(player.CurrentDirection);
+        core.Movement.SetVelocity(Vector2.zero);
+        core.Movement.SetDirection(core.Movement.CurrentDirection);
 
         sleepTimer = Time.time + playerData.sleepTime;
         canSleep = true;
@@ -31,7 +31,7 @@ public class PlayerIdleState : PlayerGroundedState
     {
         base.Exit();
 
-        player.Anim.SetBool("sleep", false);
+        core.Movement.Anim.SetBool("sleep", false);
     }
 
     public override void LogicUpdate()
@@ -40,13 +40,13 @@ public class PlayerIdleState : PlayerGroundedState
 
         if (movementInput != Vector2.zero)
         {
-            player.Anim.SetBool("sleep", false);
+            core.Movement.Anim.SetBool("sleep", false);
             stateMachine.ChangeState(player.MoveState);
         }
 
         if (sleepTimer <= Time.time && canSleep)
         {
-            player.Anim.SetBool("sleep", true);
+            core.Movement.Anim.SetBool("sleep", true);
             player.ResetCurrentDirection();
             canSleep = false;
         }

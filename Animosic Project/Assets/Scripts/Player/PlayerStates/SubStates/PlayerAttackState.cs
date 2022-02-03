@@ -19,7 +19,7 @@ public class PlayerAttackState : PlayerAbilityState
 
         setVelocity = false;
 
-        CurrentDirection = player.CurrentDirection;
+        CurrentDirection = core.Movement.CurrentDirection;
         weapon.EnterWeapon();
     }
 
@@ -29,7 +29,7 @@ public class PlayerAttackState : PlayerAbilityState
 
         if(setVelocity == true)
         {
-            player.SetVelocity(velocityToSet * player.CurrentDirection);
+            core.Movement.SetVelocity(velocityToSet * core.Movement.CurrentDirection);
         }
     }
 
@@ -48,7 +48,7 @@ public class PlayerAttackState : PlayerAbilityState
 
     public void SetPlayerVelocity(float velocity)
     {
-        player.SetVelocity(velocity * player.CurrentDirection);
+        core.Movement.SetVelocity(velocity * core.Movement.CurrentDirection);
 
         velocityToSet = velocity;
         setVelocity = true;

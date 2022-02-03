@@ -34,7 +34,7 @@ public class PlayerAbilityState : PlayerState
     {
         base.LogicUpdate();
 
-        CurrentDirection = player.CurrentDirection;
+        CurrentDirection = core.Movement.CurrentDirection;
 
         if (isAbilityDone)
         {

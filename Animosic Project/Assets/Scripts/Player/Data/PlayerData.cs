@@ -6,6 +6,9 @@ using UnityEngine;
 
 public class PlayerData : ScriptableObject
 {
+    [Header("Main Variables")]
+    public Vector2 StartingDirection = new Vector2(0, -1);
+
     [Header("Move State")]
     public float movementVelocity = 7f;
     public float movementDelayTime = 20f;
