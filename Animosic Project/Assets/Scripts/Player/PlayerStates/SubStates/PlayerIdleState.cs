@@ -7,6 +7,7 @@ public class PlayerIdleState : PlayerGroundedState
 
     private float sleepTimer;
     private bool canSleep;
+
     public PlayerIdleState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
@@ -32,11 +33,15 @@ public class PlayerIdleState : PlayerGroundedState
         base.Exit();
 
         core.Movement.Anim.SetBool("sleep", false);
+        core.Movement.Anim.SetBool("windy", false);
+
     }
 
     public override void LogicUpdate()
     {
         base.LogicUpdate();
+
+        CheckIfWindy();
 
         if (movementInput != Vector2.zero)
         {
@@ -55,5 +60,17 @@ public class PlayerIdleState : PlayerGroundedState
     public override void PhysicsUpdate()
     {
         base.PhysicsUpdate();
+    }
+
+    public void CheckIfWindy()
+    {
+        if (player.isWindy)
+        {
+            core.Movement.Anim.SetBool("windy", true);
+        }
+        else
+        {
+            core.Movement.Anim.SetBool("windy", false);
+        }
     }
 }

@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     #region Other Variables
     //public Vector2 CurrentDirection { get; private set; }
     //private Vector2 workspace;
-
+    [SerializeField] public bool isWindy;
 
     #endregion
 
