@@ -8,7 +8,7 @@ public class PlayerGroundedState : PlayerState
     protected int yInput;
     protected Vector2 movementInput;
     protected bool dashInput;
-
+    protected float attackDelay;
 
     public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -40,14 +40,20 @@ public class PlayerGroundedState : PlayerState
         movementInput = player.InputHandler.MovementInput;
         dashInput = player.InputHandler.DashInput;
 
-        if(player.InputHandler.AttackInputs[(int)CombatInputs.primary])
-        {     
-            stateMachine.ChangeState(player.PrimaryAttackState);
-        }
-        else if(player.InputHandler.AttackInputs[(int)CombatInputs.secondary])
+        if(Time.time > attackDelay)
         {
-            stateMachine.ChangeState(player.SecondaryAttackState);
+            if (player.InputHandler.AttackInputs[(int)CombatInputs.primary])
+            {
+                movementInput = Vector2.zero;
+                attackDelay = Time.time + playerData.attackDuration;
+                stateMachine.ChangeState(player.PrimaryAttackState);
+            }
+            else if (player.InputHandler.AttackInputs[(int)CombatInputs.secondary])
+            {
+                stateMachine.ChangeState(player.SecondaryAttackState);
+            }
         }
+
 
         if (Time.time > player.DashState.dashResetTime)
         {
@@ -60,8 +66,8 @@ public class PlayerGroundedState : PlayerState
         }
         else
         {
-            movementInput = new Vector2(xInput, yInput);
-            movementInput.Normalize();
+            //movementInput = new Vector2(xInput, yInput);
+            //movementInput.Normalize();
         }
 
     }

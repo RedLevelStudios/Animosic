@@ -21,3 +21,4 @@ MonoBehaviour:
   dashDuration: 0.03
   dashCooldown: 1
   dashAmount: 2
+  attackDuration: 0.3

@@ -8,6 +8,7 @@ public class PlayerAttackState : PlayerAbilityState
 
     private float velocityToSet;
     private bool setVelocity;
+    public bool isAttacking;
 
     public PlayerAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
@@ -18,8 +19,10 @@ public class PlayerAttackState : PlayerAbilityState
         base.Enter();
 
         setVelocity = false;
+        isAttacking = true;
 
         CurrentDirection = core.Movement.CurrentDirection;
+
         weapon.EnterWeapon();
     }
 
@@ -27,7 +30,7 @@ public class PlayerAttackState : PlayerAbilityState
     {
         base.LogicUpdate();
 
-        if(setVelocity == true)
+        if (setVelocity == true)
         {
             core.Movement.SetVelocity(velocityToSet * core.Movement.CurrentDirection);
         }
@@ -36,6 +39,8 @@ public class PlayerAttackState : PlayerAbilityState
     public override void Exit()
     {
         base.Exit();
+
+        isAttacking = false;
 
         weapon.ExitWeapon();
     }

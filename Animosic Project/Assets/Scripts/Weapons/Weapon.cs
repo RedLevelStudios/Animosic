@@ -36,7 +36,9 @@ public class Weapon : MonoBehaviour
         baseAnimator.SetInteger("attackCounter", attackCounter);
         weaponAnimator.SetInteger("attackCounter", attackCounter);
 
-        Debug.Log("Attack Counter: " + attackCounter);
+        //Debug.Log("Attack Counter: " + attackCounter);
+        Debug.Log("Enter Attack");
+
     }
 
     public virtual void ExitWeapon()
@@ -47,6 +49,7 @@ public class Weapon : MonoBehaviour
         attackCounter++;
 
         gameObject.SetActive(false);
+        Debug.Log("Exit Attack");
     }
 
     #region Animation Triggers

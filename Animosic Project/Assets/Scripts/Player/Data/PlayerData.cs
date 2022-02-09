@@ -20,6 +20,9 @@ public class PlayerData : ScriptableObject
     public float dashDuration = .03f;
     public float dashCooldown = 1f;
     public int dashAmount = 2;
+
+    [Header("Attack State")]
+    public float attackDuration = .4f;
 }
 
 
