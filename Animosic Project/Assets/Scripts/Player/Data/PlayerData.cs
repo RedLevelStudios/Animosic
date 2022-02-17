@@ -10,9 +10,9 @@ public class PlayerData : ScriptableObject
     public Vector2 StartingDirection = new Vector2(0, -1);
 
     [Header("Move State")]
-    public float movementVelocity = 7f;
+    public float movementVelocity = 9f;
     public float movementDelayTime = 20f;
-    public float sleepTime = 10f;
+    public float sleepTime = 20f;
     public float attackVelocity = 3f;
 
     [Header("Dash State")]

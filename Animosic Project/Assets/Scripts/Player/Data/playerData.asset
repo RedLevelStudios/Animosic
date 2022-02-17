@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: playerData
   m_EditorClassIdentifier: 
   StartingDirection: {x: 0, y: -1}
-  movementVelocity: 10
+  movementVelocity: 9
   movementDelayTime: 20
-  sleepTime: 10
+  sleepTime: 20
   attackVelocity: 3
   dashVelocity: 85
   dashDuration: 0.03
   dashCooldown: 1
   dashAmount: 2
-  attackDuration: 0.3
+  attackDuration: 0.4
