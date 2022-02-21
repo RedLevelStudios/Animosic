@@ -22,7 +22,7 @@ public class PlayerAbilityState : PlayerState
 
         isAbilityDone = false;
 
-        //Debug.Log("Enter Ability State");
+        Debug.Log("Enter Ability State");
     }
 
     public override void Exit()

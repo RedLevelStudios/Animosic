@@ -36,7 +36,11 @@ public class PlayerDashState : PlayerAbilityState
     {
         base.LogicUpdate();
 
-        if (Time.time < dashStopTime && CanDash())
+/*        if (Time.time < dashStopTime && CanDash() && dashFinished == false)
+        {
+            core.Movement.SetVelocity(core.Movement.CurrentDirection * playerData.dashVelocity);
+        }*/
+        if (isAbilityDone == false && CanDash())
         {
             core.Movement.SetVelocity(core.Movement.CurrentDirection * playerData.dashVelocity);
         }

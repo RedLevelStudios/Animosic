@@ -37,8 +37,13 @@ public class PlayerGroundedState : PlayerState
 
         xInput = player.InputHandler.NormInputX;
         yInput = player.InputHandler.NormInputY;
-        movementInput = player.InputHandler.MovementInput;
+        //movementInput = player.InputHandler.MovementInput;
         dashInput = player.InputHandler.DashInput;
+
+        movementInput = new Vector2(xInput, yInput);
+        movementInput.Normalize();
+
+        //movementInput.Normalize();
 
         if(Time.time > attackDelay)
         {

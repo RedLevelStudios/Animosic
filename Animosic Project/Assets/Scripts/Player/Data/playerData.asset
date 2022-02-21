@@ -17,7 +17,7 @@ MonoBehaviour:
   movementDelayTime: 20
   sleepTime: 20
   attackVelocity: 3
-  dashVelocity: 85
+  dashVelocity: 40
   dashDuration: 0.03
   dashCooldown: 1
   dashAmount: 2
