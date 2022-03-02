@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TM_Overworld_Spring_01_1
+  m_Name: TM_OW_SPR_01_0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -3166074981981077176, guid: 21772c372a953b046839792cb0f75977, type: 3}
+  m_Sprite: {fileID: 7294067771718813687, guid: 21772c372a953b046839792cb0f75977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
